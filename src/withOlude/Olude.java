@@ -24,8 +24,13 @@ public static String randomDigitGenerator (){
 		arrayChar[i]= rand.nextInt(9)+1;
 	}
 	
-	String n = Arrays.toString(arrayChar);	
-	return n;
+	//putting arraychar into string
+	String newString = "";
+	for(int i = 0; i<10; i++) {
+		newString += arrayChar[i];
+	}
+	
+	return newString;
 }
 
 public void test(){
